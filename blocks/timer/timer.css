@@ -1,0 +1,56 @@
+.timer {
+  width: 280px;
+  height: 280px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: rgb(208, 200, 200);
+  --animation: 10s;
+}
+
+.timer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgb(208, 200, 200);
+  animation: mask-left var(--animation) steps(1, end) forwards;
+}
+
+.timer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  background-color: blueviolet;
+  animation: mask-right var(--animation) steps(1, end) forwards;
+}
+
+@keyframes mask-right {
+  0% {
+    visibility: visible;
+  }
+  50%,
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes mask-left {
+  0% {
+    visibility: hidden;
+  }
+  50%,
+  100% {
+    visibility: visible;
+  }
+}

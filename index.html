@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Секундомер</title>
+</head>
+<body>
+  <div class="root">
+    <div class="main">
+      <div class="timer-body">
+        <div class="timer">
+          <div class="timer__line"></div>
+          <div class="timer__body">
+            <p class="timer__counter">00:00:01</p>
+          </div>
+        </div>
+        <div class="set-timer">
+          <div class="set-timer__titles">
+            <p class="set-timer__title">ч.</p>
+            <p class="set-timer__title">мин</p>
+            <p class="set-timer__title">сек.</p>
+          </div>
+          <div class="set-timer__items">
+            <input class="set-timer__time set-timer__time_type_hours" value="00" type="text" minlength="1" maxlength="2">
+            <p class="set-timer__gap">:</p>
+            <input class="set-timer__time set-timer__time_type_minutes" value="00" type="text" minlength="1" maxlength="2">
+            <p class="set-timer__gap">:</p>
+            <input class="set-timer__time set-timer__time_type_seconds" value="00" type="text" minlength="1" maxlength="2">
+          </div>
+        </div>
+        <button class="button button_type_start button_type_disabled" type="button" disabled>Начать</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2022. Семён Толстогузов</p>
+      <p class="footer__author">semen.tolstoguzov@mail.ru</p>
+    </footer>
+  </div>
+  <script src="./pages/index.js"></script>
+</body>
+</html>

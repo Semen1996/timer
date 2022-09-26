@@ -1,0 +1,13 @@
+.set-timer__time {
+  width: 60px;
+  height: 69px;
+  padding: 0;
+  border: 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

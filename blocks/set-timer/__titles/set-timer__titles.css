@@ -1,0 +1,7 @@
+.set-timer__titles {
+  display: grid;
+  grid-template-columns: repeat(3,60px);
+  grid-column-gap: 16px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
